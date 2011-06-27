@@ -4,8 +4,11 @@
 (define-key global-map "\C-ca" 'org-agenda)
 (setq org-log-done t)
 
-(setq org-agenda-files (list "/Users/sbraznikov/Dropbox/MobileOrg/index.org"))
+(setq org-agenda-files (list "/Users/sbraznikov/Dropbox/MobileOrg/index.org"
+                             "/Users/sbraznikov/Dropbox/MobileOrg/proj.org"))
+
+;; (setq org-todo-keywords
+;;       '((sequence "TODO" "WAIT" "|" "DONE")))
 
 (setq org-todo-keywords
-      '((sequence "TODO" "WAIT" "|" "DONE")
-        ))
+      '((sequence "TODO" "PROGRESS" "|" "DONE")))
